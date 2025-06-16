@@ -25,7 +25,7 @@ public class NewServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-       
+       String nom=request.getParameter("nom");
         int note1 =Integer.parseInt(request.getParameter("note1"));
         int note2 =Integer.parseInt(request.getParameter("note2"));
        
